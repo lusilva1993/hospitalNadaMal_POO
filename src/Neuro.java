@@ -1,2 +1,4 @@
-public class Neuro {
+public final class Neuro extends Medico{
+
+
 }

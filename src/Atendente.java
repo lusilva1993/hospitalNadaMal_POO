@@ -1,2 +1,4 @@
-public class Atendente {
+public final class Atendente extends Funcionario{
+
+
 }

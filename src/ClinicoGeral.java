@@ -1,2 +1,3 @@
-public class ClinicoGeral {
+public final class ClinicoGeral extends Medico {
+
 }
