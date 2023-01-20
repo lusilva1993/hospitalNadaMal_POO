@@ -1,2 +1,5 @@
-public class CirurgiaoGeral {
+public class CirurgiaoGeral extends Medico{
+
+    private String cirurgia;
+    
 }
