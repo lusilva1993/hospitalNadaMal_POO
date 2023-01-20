@@ -3,5 +3,8 @@ public class Main {
 
         System.out.println("Bem vindo ao Hospital Nada Mal, Aqui você sai legal!");
         System.out.println("Por favor, escolha uma das opções abaixo:");
+        System.out.println("1 - Cadastrar");
+
+
     }
 }
