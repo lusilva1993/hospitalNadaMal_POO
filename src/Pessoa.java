@@ -3,22 +3,22 @@ public abstract class Pessoa {
     private String nome;
     private String CPF;
     private String telefone;
-    private String altura;
+    private Double altura;
     private Double peso;
+    private String imc;
 
-    public static final boolean pesoIdeal(Double altura, Double peso){
-        double imc = peso*altura;
+    public static final String pesoIdeal(Double altura, Double peso){
+        double imc = peso/(altura*altura);
         boolean pesoIdeal = false;
-        if(imc >= 18.5 ||imc <= 24.9){
-            return pesoIdeal = true;
+        if(imc >= 18.5 && imc <= 24.9){
+            return "Paciente dentro do peso ideal";
         }
-        return pesoIdeal;
+        return "Paciente fora do peso ideal";
     }
 
     public abstract void dadosPessoais(String nome, String CPF, String telefone, Double altura, Double peso);
 
     public String getNome() {
-
         return nome;
     }
 
@@ -27,12 +27,12 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
-    public String getAltura() {
+    public Double getAltura() {
 
         return altura;
     }
 
-    public void setAltura(String altura) {
+    public void setAltura(Double altura) {
 
         this.altura = altura;
     }
@@ -65,6 +65,14 @@ public abstract class Pessoa {
     public void setTelefone(String telefone) {
 
         this.telefone = telefone;
+    }
+
+    public String getImc() {
+        return imc;
+    }
+
+    public void setImc(String imc) {
+        this.imc = imc;
     }
 
 }

@@ -10,7 +10,7 @@ Pessoa
 Paciente
 Funcionário
 Medico
-Atendente
+AtendenteEnfermagem
 Sala
 Atendimento
 Fila/espera – se encaixa no atendimento, a sala
@@ -27,7 +27,7 @@ Clinico Geral
 1 Método paciente – lista sintomas = List<String> sintomas()
 1 Método medico – realizar diagnóstico = String diagnosticoFinal(List<String> sintomas)
 1 Método sala – void reservar(int dia, int mês, int ano);
-1 Atendente – void iniciarAtendimento() – pode ser final
+1 AtendenteEnfermagem – void iniciarAtendimento() – pode ser final
 
 Todos os atributos devem ser private
 Criar um construtor por classe
